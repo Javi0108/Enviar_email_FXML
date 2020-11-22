@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="512.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="104.0" text="Servidor SMTP:" />
+                  <TextField prefHeight="26.0" prefWidth="346.0" promptText="Nombre o IP del Servidor" />
+                  <TextField prefHeight="26.0" prefWidth="71.0" promptText="Puerto" />
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="512.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="121.0" text="Usar conexión SSL:" />
+                  <CheckBox mnemonicParsing="false" />
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="512.0">
+               <children>
+                  <Label text="Remitente (From):" />
+                  <TextField prefHeight="26.0" prefWidth="266.0" promptText="Email del remitente" />
+                  <TextField prefHeight="26.0" prefWidth="138.0" promptText="Contraseña" />
+               </children>
+            </HBox>
+            <HBox prefHeight="28.0" prefWidth="512.0">
+               <children>
+                  <Label text="Destinatario (To):" />
+                  <TextField prefHeight="26.0" prefWidth="409.0" promptText="Email del destiantario" />
+               </children>
+            </HBox>
+            <HBox prefHeight="28.0" prefWidth="512.0">
+               <children>
+                  <Label text="Asunto (Subject):" />
+                  <TextField prefHeight="26.0" prefWidth="410.0" promptText="Asunto del mensaje" />
+               </children>
+            </HBox>
+            <TextField alignment="TOP_LEFT" prefHeight="238.0" prefWidth="512.0" promptText="Mensaje" />
+         </children>
+      </VBox>
+      <VBox layoutX="539.0" prefHeight="400.0" prefWidth="55.0">
+         <children>
+            <Button mnemonicParsing="false" text="Enviar" />
+            <Button mnemonicParsing="false" text="Vaciar" />
+            <Button mnemonicParsing="false" text="Cerrar" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
